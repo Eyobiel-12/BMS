@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-[90vh] overflow-hidden">
+      <section className="relative h-[80vh] sm:h-[90vh] overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/hero-luxury-sofa.png"
@@ -21,27 +21,27 @@ export default function Home() {
           />
           <div className="absolute inset-0 hero-gradient"></div>
         </div>
-        <div className="relative flex h-full items-center pt-20">
+        <div className="relative flex h-full items-center pt-10 sm:pt-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl fade-in">
-              <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+              <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-6xl">
                 <span className="block">Italiaans geïnspireerd</span>
                 <span className="block mt-2">
                   <GoldAccent>Vakmanschap</GoldAccent> in Stoffering
                 </span>
               </h1>
-              <p className="mt-6 text-xl text-white/90 fade-in-delay-1">
+              <p className="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl text-white/90 fade-in-delay-1">
                 Geef uw meubels nieuw leven met onze professionele stoffeerdiensten. Met 18 jaar ervaring brengen wij
                 comfort en stijl terug in uw interieur.
               </p>
-              <div className="mt-10 flex items-center gap-x-6 fade-in-delay-2">
-                <Button size="lg" asChild className="btn-hover-effect">
+              <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row items-center gap-4 sm:gap-x-6 fade-in-delay-2">
+                <Button size="lg" asChild className="btn-hover-effect w-full sm:w-auto">
                   <Link href="/contact">Vraag een Offerte Aan</Link>
                 </Button>
                 <Button
                   variant="outline"
                   size="lg"
-                  className="bg-white/10 text-white hover:bg-white/20 btn-hover-effect"
+                  className="bg-white/10 text-white hover:bg-white/20 btn-hover-effect w-full sm:w-auto mt-3 sm:mt-0"
                   asChild
                 >
                   <Link href="/galerij">Bekijk Ons Werk</Link>
@@ -53,103 +53,103 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-24 luxury-bg">
+      <section className="py-12 sm:py-16 md:py-24 luxury-bg">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <DecorativeHeading centered className="mb-12">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <DecorativeHeading centered className="mb-8 sm:mb-12">
+            <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl md:text-4xl">
               Onze <GoldAccent>Diensten</GoldAccent>
             </h2>
-            <p className="mt-4 text-lg text-gray-600">Wij bieden een breed scala aan professionele stoffeerdiensten</p>
+            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-gray-600">Wij bieden een breed scala aan professionele stoffeerdiensten</p>
           </DecorativeHeading>
 
-          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-8 sm:mt-16 grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-4">
             <Card className="service-card luxury-card relative border-none bg-white shadow-md">
-              <CardHeader>
-                <div className="mb-2 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                  <Scissors className="h-6 w-6 text-primary" />
+              <CardHeader className="pb-3 sm:pb-4">
+                <div className="mb-2 inline-flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-primary/10">
+                  <Scissors className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
                 </div>
-                <CardTitle>Herstofferen</CardTitle>
+                <CardTitle className="text-lg sm:text-xl">Herstofferen</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">
+                <p className="text-sm sm:text-base text-gray-600">
                   Geef uw meubels een nieuwe look met onze professionele herstoffeerdienst. Kies uit een breed
                   assortiment stoffen en kleuren.
                 </p>
               </CardContent>
               <CardFooter>
-                <Button variant="ghost" className="p-0 text-primary group" asChild>
+                <Button variant="ghost" className="p-0 text-primary group text-sm sm:text-base" asChild>
                   <Link href="/diensten#herstofferen" className="flex items-center">
                     Meer informatie{" "}
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    <ArrowRight className="ml-1 sm:ml-2 h-3 w-3 sm:h-4 sm:w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
               </CardFooter>
             </Card>
 
             <Card className="service-card luxury-card relative border-none bg-white shadow-md">
-              <CardHeader>
-                <div className="mb-2 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                  <Brush className="h-6 w-6 text-primary" />
+              <CardHeader className="pb-3 sm:pb-4">
+                <div className="mb-2 inline-flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-primary/10">
+                  <Brush className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
                 </div>
-                <CardTitle>Restauratie</CardTitle>
+                <CardTitle className="text-lg sm:text-xl">Restauratie</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">
+                <p className="text-sm sm:text-base text-gray-600">
                   Herstel de originele schoonheid van uw antieke of beschadigde meubels met onze vakkundige
                   restauratiediensten.
                 </p>
               </CardContent>
               <CardFooter>
-                <Button variant="ghost" className="p-0 text-primary group" asChild>
+                <Button variant="ghost" className="p-0 text-primary group text-sm sm:text-base" asChild>
                   <Link href="/diensten#restauratie" className="flex items-center">
                     Meer informatie{" "}
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    <ArrowRight className="ml-1 sm:ml-2 h-3 w-3 sm:h-4 sm:w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
               </CardFooter>
             </Card>
 
             <Card className="service-card luxury-card relative border-none bg-white shadow-md">
-              <CardHeader>
-                <div className="mb-2 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                  <Tool className="h-6 w-6 text-primary" />
+              <CardHeader className="pb-3 sm:pb-4">
+                <div className="mb-2 inline-flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-primary/10">
+                  <Tool className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
                 </div>
-                <CardTitle>Reparatie</CardTitle>
+                <CardTitle className="text-lg sm:text-xl">Reparatie</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">
+                <p className="text-sm sm:text-base text-gray-600">
                   Laat uw beschadigde meubels repareren door onze experts. We herstellen scheuren, gaten, gebroken
                   frames en meer.
                 </p>
               </CardContent>
               <CardFooter>
-                <Button variant="ghost" className="p-0 text-primary group" asChild>
+                <Button variant="ghost" className="p-0 text-primary group text-sm sm:text-base" asChild>
                   <Link href="/diensten#reparatie" className="flex items-center">
                     Meer informatie{" "}
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    <ArrowRight className="ml-1 sm:ml-2 h-3 w-3 sm:h-4 sm:w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
               </CardFooter>
             </Card>
 
             <Card className="service-card luxury-card relative border-none bg-white shadow-md">
-              <CardHeader>
-                <div className="mb-2 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                  <Star className="h-6 w-6 text-primary" />
+              <CardHeader className="pb-3 sm:pb-4">
+                <div className="mb-2 inline-flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-primary/10">
+                  <Star className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
                 </div>
-                <CardTitle>Speciale Projecten</CardTitle>
+                <CardTitle className="text-lg sm:text-xl">Speciale Projecten</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">
+                <p className="text-sm sm:text-base text-gray-600">
                   Heeft u een uniek project in gedachten? Wij werken samen met u om uw visie tot leven te brengen met
                   maatwerk oplossingen.
                 </p>
               </CardContent>
               <CardFooter>
-                <Button variant="ghost" className="p-0 text-primary group" asChild>
+                <Button variant="ghost" className="p-0 text-primary group text-sm sm:text-base" asChild>
                   <Link href="/diensten#speciale-projecten" className="flex items-center">
                     Meer informatie{" "}
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    <ArrowRight className="ml-1 sm:ml-2 h-3 w-3 sm:h-4 sm:w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
               </CardFooter>
@@ -159,18 +159,18 @@ export default function Home() {
       </section>
 
       {/* Featured Work Section */}
-      <section className="py-24">
+      <section className="py-12 sm:py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <DecorativeHeading centered className="mb-12">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <DecorativeHeading centered className="mb-8 sm:mb-12">
+            <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl md:text-4xl">
               Uitgelicht <GoldAccent>Werk</GoldAccent>
             </h2>
-            <p className="mt-4 text-lg text-gray-600">Ontdek onze meest recente meesterwerken</p>
+            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-gray-600">Ontdek onze meest recente meesterwerken</p>
           </DecorativeHeading>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 sm:gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div className="relative overflow-hidden rounded-xl shadow-lg group">
-              <div className="relative h-[350px]">
+              <div className="relative h-[250px] sm:h-[300px] md:h-[350px]">
                 <Image
                   src="/gallery/green-chesterfield.png"
                   alt="Luxe Chesterfield bank in groen fluweel"
@@ -178,16 +178,16 @@ export default function Home() {
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                <h3 className="text-xl font-semibold text-white">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 sm:p-6">
+                <h3 className="text-lg sm:text-xl font-semibold text-white">
                   <GoldAccent>Chesterfield Hoekbank</GoldAccent>
                 </h3>
-                <p className="text-white/90 mt-2">Luxueuze fluwelen hoekbank met klassieke Chesterfield details</p>
+                <p className="text-sm sm:text-base text-white/90 mt-1 sm:mt-2">Luxueuze fluwelen hoekbank met klassieke Chesterfield details</p>
               </div>
             </div>
 
             <div className="relative overflow-hidden rounded-xl shadow-lg group">
-              <div className="relative h-[350px]">
+              <div className="relative h-[250px] sm:h-[300px] md:h-[350px]">
                 <Image
                   src="/gallery/vintage-teal-chair.png"
                   alt="Antieke stoel met turquoise fluweel en houten frame"
@@ -195,18 +195,16 @@ export default function Home() {
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                <h3 className="text-xl font-semibold text-white">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 sm:p-6">
+                <h3 className="text-lg sm:text-xl font-semibold text-white">
                   <GoldAccent>Antieke Fauteuil</GoldAccent>
                 </h3>
-                <p className="text-white/90 mt-2">
-                  Gerestaureerde antieke stoel met handgesneden details en fluwelen bekleding
-                </p>
+                <p className="text-sm sm:text-base text-white/90 mt-1 sm:mt-2">Gerestaureerde antieke fauteuil met handgemaakte details</p>
               </div>
             </div>
 
             <div className="relative overflow-hidden rounded-xl shadow-lg group">
-              <div className="relative h-[350px]">
+              <div className="relative h-[250px] sm:h-[300px] md:h-[350px]">
                 <Image
                   src="/gallery/dark-gray-sectional.png"
                   alt="Moderne hoekbank in donkergrijs fluweel"
@@ -214,11 +212,11 @@ export default function Home() {
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                <h3 className="text-xl font-semibold text-white">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 sm:p-6">
+                <h3 className="text-lg sm:text-xl font-semibold text-white">
                   <GoldAccent>Moderne Hoekbank</GoldAccent>
                 </h3>
-                <p className="text-white/90 mt-2">
+                <p className="text-sm sm:text-base text-white/90 mt-1 sm:mt-2">
                   Ruime hoekbank in luxueus donkergrijs fluweel voor maximaal comfort
                 </p>
               </div>
@@ -241,7 +239,9 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 md:grid-cols-2">
             <div className="relative">
-              <ItalianFrame className="absolute inset-0 z-10"></ItalianFrame>
+              <ItalianFrame className="absolute inset-0 z-10">
+                <span className="sr-only">Decorative frame</span>
+              </ItalianFrame>
               <div className="relative h-[500px] overflow-hidden rounded-xl shadow-xl transform transition-transform hover:scale-[1.02] duration-500">
                 <Image
                   src="/owner.png"

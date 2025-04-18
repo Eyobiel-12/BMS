@@ -16,22 +16,36 @@ const testimonials: Testimonial[] = [
     id: 1,
     quote:
       "BSM heeft onze antieke bank prachtig gerestaureerd. Het vakmanschap is van het hoogste niveau en de aandacht voor detail is indrukwekkend.",
-    author: "Familie de Vries",
+    author: "Aiden",
     role: "Apeldoorn",
   },
   {
     id: 2,
     quote:
       "Ik ben zeer tevreden met de herstoffering van mijn eetkamerstoelen. De kwaliteit van het werk is uitstekend en de service was vriendelijk en professioneel.",
-    author: "Marieke Jansen",
+    author: "Lana",
     role: "Deventer",
   },
   {
     id: 3,
     quote:
       "Bashir heeft onze oude Italiaanse bank nieuw leven ingeblazen. Zijn kennis van traditionele technieken gecombineerd met moderne materialen is indrukwekkend.",
-    author: "Peter en Annemieke",
+    author: "Suze",
     role: "Zutphen",
+  },
+  {
+    id: 4,
+    quote:
+      "De service en kwaliteit van BSM zijn ongeëvenaard. Mijn bank ziet er nu weer als nieuw uit!",
+    author: "Morris",
+    role: "Apeldoorn",
+  },
+  {
+    id: 5,
+    quote:
+      "Professioneel werk en uitstekende communicatie. Ze hebben mijn oude fauteuil omgetoverd tot een modern meesterwerk.",
+    author: "Rafael",
+    role: "Deventer",
   },
 ]
 

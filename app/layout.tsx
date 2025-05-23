@@ -34,6 +34,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="nl" suppressHydrationWarning className="scroll-smooth">
+      <head>
+        <meta name="google-site-verification" content="6xLzDn6Pk54EJFcmfeC6mC7UpTP8v_gdaVorXGhR5cs" />
+      </head>
       <body className={`${inter.variable} ${playfair.variable} font-sans pt-28 md:pt-32`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <div className="flex min-h-screen flex-col">
